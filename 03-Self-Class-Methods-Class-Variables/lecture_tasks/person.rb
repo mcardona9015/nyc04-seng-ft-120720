@@ -1,5 +1,28 @@
-reruire 'pry'
+require 'pry'
 
+class Person
+    attr_reader :name
+    attr_accessor :last_hunger_level_change, :hunger_level, :hunger_time
+
+    def initialize(name, hunger_time = 0.01)
+      @last_hunger_level_change = Time.now
+      @name = name
+      @hunger_level = 5.0
+      @hunger_time = hunger_time
+    end
+  
+    def shower
+      puts "Showering..."
+  
+    end
+    
+  
+  
+  
+  
+  
+end
+  
 
 binding.pry
 0
